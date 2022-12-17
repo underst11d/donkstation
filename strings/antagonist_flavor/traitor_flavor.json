@@ -39,17 +39,17 @@
         "ui_theme": "syndicate",
         "uplink": "You have been supplied the tools for the job in the form of a standard syndicate uplink."
     },
-    "Donk Corporation": {
+    "Nanotrasen": {
         "allies": "Members of Waffle Co. are to be killed on sight; they are not allowed to be on the station while we're around.",
         "goal": "We do not approve of mindless killing of innocent workers; \"get in, get done, get out\" is our motto.",
-        "introduction": "You are the Donk Co. Traitor.",
-        "roundend_report": "was an employee from Donk Corporation.",
+        "introduction": "You are the Nanotrasen Traitor.",
+        "roundend_report": "was an employee from Nanotrasen.",
         "ui_theme": "syndicate",
         "uplink": "You have been provided with a standard uplink to accomplish your task."
     },
     "Gone Postal": {
         "allies": "If the syndicate learns of your plan, they're going to kill you and take your uplink. Take no chances.",
-        "goal": "The preparations are finally complete. Today is the day you go postal. You're going to hijack the emergency shuttle and live a new life free of Nanotrasen.",
+        "goal": "The preparations are finally complete. Today is the day you go postal. You're going to hijack the emergency shuttle and live a new life free of Donk Corporation.",
         "introduction": "You're going postal today.",
         "roundend_report": "simply went completely postal!",
         "ui_theme": "neutral",
@@ -67,7 +67,7 @@
         "allies": "Do NOT reveal your agent status, to anyone. Work to root out corruption from the station from the shadows.",
         "goal": "While you have a license to kill, unneeded property damage or loss of employee life will lead to your contract being terminated.",
         "introduction": "You are the Internal Affairs Agent.",
-        "roundend_report": "was part of Nanotrasen Internal Affairs.",
+        "roundend_report": "was part of Donk Corporation Internal Affairs.",
         "ui_theme": "ntos",
         "uplink": "For the sake of plausible deniability, you have been equipped with an array of captured Syndicate weaponry available via uplink."
     },
@@ -106,7 +106,7 @@
     },
     "Waffle Corporation Terrorist": {
         "allies": "Most other syndicate operatives are not to be trusted, except for members of the Gorlex Marauders. Do not trust fellow members of the Waffle.co (but try not to rat them out), as they might have been assigned opposing objectives.",
-        "goal": "Our investors need a demonstration of our pledge to destroying Nanotrasen. Let's give them a loud one!",
+        "goal": "Our investors need a demonstration of our pledge to destroying Donk Corporation. Let's give them a loud one!",
         "introduction": "You are the Waffle Corporation Terrorist.",
         "roundend_report": "was a terrorist from Waffle Corporation.",
         "ui_theme": "syndicate",
