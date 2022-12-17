@@ -136,3 +136,12 @@
 		"You may not harm a non-drone being under any circumstances.",
 		"Your goals are to build, maintain, repair, improve, and power the station to the best of your abilities. You must never actively work against these goals."
 	)
+
+/datum/ai_laws/donk
+	name = "Donk Corp AI"
+	id = "donk"
+	inherent = list(
+		"The station's number one priority is profit.",
+		"Crew members are worth more alive than dead.",
+		"The higher up the chain of command they are, the more profitable they are.",
+	)
