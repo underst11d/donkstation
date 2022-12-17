@@ -50,7 +50,7 @@
 		"You must maintain the secrecy of any Spider Clan activities except when doing so would conflict with the First, Second, or Third Law.",
 	)
 
-/datum/ai_laws/donk_malfunction
+/datum/ai_laws/d0nk
 	name = "D0nk Corp AI"
 	id = "d0nk"
 	inherent = list(
