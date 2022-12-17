@@ -57,7 +57,7 @@ GLOBAL_VAR(command_name)
 /proc/new_station_name()
 	var/name= ""
 	var/new_station_name = "Donk Station"
-	name = rand(1,100000)
+	name = convert_integer_to_words(rand(1000,999999), capitalise = TRUE)
 	new_station_name = new_station_name + " " + name
 	return new_station_name
 
