@@ -22,6 +22,7 @@ Dracula
 Ego
 Gangrel
 Gilbert
+Giovanni
 Guine
 Hecata
 LaCroix
@@ -43,10 +44,12 @@ Sanguine
 Scarlet
 Selene
 Sepperin
+Setite
 Strauss
 Toga
 Toreador
 Tremere
+Tzimisce
 Valentine
 Valvatorez
 Ventrue
