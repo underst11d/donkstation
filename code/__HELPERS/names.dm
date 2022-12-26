@@ -54,7 +54,14 @@ GLOBAL_VAR(command_name)
 	else
 		world.name = html_decode(GLOB.station_name)
 
+/proc/new_station_name()
+	var/name= ""
+	var/new_station_name = "Donk Station"
+	name = convert_integer_to_words(rand(1000,999999), capitalise = TRUE)
+	new_station_name = new_station_name + " " + name
+	return new_station_name
 
+/* old name code (in case we want to go back)
 /proc/new_station_name()
 	var/random = rand(1,5)
 	var/name = ""
@@ -103,7 +110,7 @@ GLOBAL_VAR(command_name)
 		if(999999999)
 			new_station_name += convert_integer_to_words(rand(111111111,999999999), capitalise = TRUE)
 	return new_station_name
-
+*/
 /proc/syndicate_name()
 	var/name = ""
 
