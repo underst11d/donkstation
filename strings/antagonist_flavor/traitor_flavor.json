@@ -42,8 +42,8 @@
     "Nanotrasen": {
         "allies": "Members of Waffle Co. are to be killed on sight; they are not allowed to be on the station while we're around.",
         "goal": "We do not approve of mindless killing of innocent workers; \"get in, get done, get out\" is our motto.",
-        "introduction": "You are the Donk Co. Traitor.",
-        "roundend_report": "was an employee from Donk Corporation.",
+        "introduction": "You are the Nanotrasen Employee.",
+        "roundend_report": "was an employee from Nanotrasen",
         "ui_theme": "syndicate",
         "uplink": "You have been provided with a standard uplink to accomplish your task."
     },
@@ -97,7 +97,7 @@
         "uplink_name": "hy-lurgixon tome"
     },
     "Waffle Corporation": {
-        "allies": "Members of Donk Co. are to be killed on sight; they are not allowed to be on the station while we're around. Do not trust fellow members of the Waffle.co (but try not to rat them out), as they might have been assigned opposing objectives.",
+        "allies": "Members of Nanotrasen are to be killed on sight; they are not allowed to be on the station while we're around. Do not trust fellow members of the Waffle.co (but try not to rat them out), as they might have been assigned opposing objectives.",
         "goal": "You are not here for a station-wide demonstration. Again, other Waffle Co. Traitors may be, so watch out. Your job is to only accomplish your objectives.",
         "introduction": "You are the Waffle Co. Traitor.",
         "roundend_report": "was an employee from Waffle Corporation.",
@@ -105,8 +105,8 @@
         "uplink": "You have been provided with a standard uplink to accomplish your task."
     },
     "Waffle Corporation Terrorist": {
-        "allies": "Most other syndicate operatives are not to be trusted, except for members of the Gorlex Marauders. Do not trust fellow members of the Waffle.co (but try not to rat them out), as they might have been assigned opposing objectives.",
-        "goal": "Our investors need a demonstration of our pledge to destroying Nanotrasen. Let's give them a loud one!",
+        "allies": "Your only allies are other Waffle Co employees.  Everyone else on station is a target.",
+        "goal": "Donk Corporation must be reminded of their place on the corporate food chain.  In addition to your high-priority targets, wipe out as many sentients as possible",
         "introduction": "You are the Waffle Corporation Terrorist.",
         "roundend_report": "was a terrorist from Waffle Corporation.",
         "ui_theme": "syndicate",
