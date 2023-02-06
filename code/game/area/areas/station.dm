@@ -1461,7 +1461,7 @@
 
 //The Factory
 /area/station/factory
-	name = "Factory"
+	name = "\improper Factory"
 	icon_state = "factory"
 	airlock_wires = /datum/wires/airlock/factory
 	sound_environment = SOUND_AREA_STANDARD_STATION
