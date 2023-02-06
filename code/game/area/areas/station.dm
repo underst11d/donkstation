@@ -411,6 +411,10 @@
 	name = "\improper Quartermaster's Office"
 	icon_state = "qm_office"
 
+/area/station/command/heads_quarters/fd
+	name = "\improper Factory Director's Office"
+	icon_state = "fd_office"
+
 //Command - Teleporters
 
 /area/station/command/teleporter
@@ -1454,3 +1458,14 @@
 
 /area/station/maintenance/external/port/bow
 	name = "\improper Port Bow External Hull Access"
+
+//The Factory
+/area/station/factory
+	name = "Factory"
+	icon_state = "factory"
+	airlock_wires = /datum/wires/airlock/factory
+	sound_environment = SOUND_AREA_STANDARD_STATION
+
+/area/station/factory/production_line
+	name = "\improper Production Line"
+	icon_state = "production"
