@@ -141,6 +141,11 @@
 /// Access to the Lawyer's office.
 #define ACCESS_LAWYER "lawyer"
 
+/// Access to the Factory
+#define ACCESS_FACTORY "factory"
+/// Access to the Foreman's office, and any other Foreman-only things.
+#define ACCESS_FM "fm"
+
 /// - - - AWAY MISSIONS - - -
 /*For generic away-mission/ruin access. Why would normal crew have access to a long-abandoned derelict
 	or a 2000 year-old temple? */

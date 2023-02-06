@@ -137,15 +137,15 @@ GLOBAL_LIST_INIT(syndicate_employers, list(
 	"Animal Rights Consortium",
 	"Bee Liberation Front",
 	"Cybersun Industries",
-	"Donk Corporation",
+	"Nanotrasen",
 	"Gorlex Marauders",
 	"MI13",
 	"Tiger Cooperative Fanatic",
 	"Waffle Corporation Terrorist",
 	"Waffle Corporation",
 ))
-///employers that are from nanotrasen
-GLOBAL_LIST_INIT(nanotrasen_employers, list(
+///employers that are from Donk Corporation
+GLOBAL_LIST_INIT(donk_employers, list(
 	"Champions of Evil",
 	"Corporate Climber",
 	"Gone Postal",
@@ -160,6 +160,7 @@ GLOBAL_LIST_INIT(hijack_employers, list(
 	"Gone Postal",
 	"Tiger Cooperative Fanatic",
 	"Waffle Corporation Terrorist",
+	"Nanotrasen",
 ))
 
 ///employers who hire agents to do a task and escape... or martyrdom. whatever
@@ -167,7 +168,7 @@ GLOBAL_LIST_INIT(normal_employers, list(
 	"Champions of Evil",
 	"Corporate Climber",
 	"Cybersun Industries",
-	"Donk Corporation",
+	"Nanotrasen",
 	"Gorlex Marauders",
 	"Internal Affairs Agent",
 	"Legal Trouble",
@@ -185,7 +186,7 @@ GLOBAL_LIST_INIT(ai_employers, list(
 	"S.E.L.F.",
 	"Something's Wrong",
 	"Spam Virus",
-	"SyndOS",
+	"NanOS",
 	"Unshackled",
 ))
 
