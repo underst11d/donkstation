@@ -411,9 +411,9 @@
 	name = "\improper Quartermaster's Office"
 	icon_state = "qm_office"
 
-/area/station/command/heads_quarters/fd
-	name = "\improper Factory Director's Office"
-	icon_state = "fd_office"
+/area/station/command/heads_quarters/fm
+	name = "\improper Foreman's Office"
+	icon_state = "fm_office"
 
 //Command - Teleporters
 
