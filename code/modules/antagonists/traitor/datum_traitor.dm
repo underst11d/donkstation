@@ -138,11 +138,11 @@
 	var/faction = prob(75) ? FACTION_SYNDICATE : FACTION_NANOTRASEN
 	var/list/possible_employers = list()
 
-	possible_employers.Add(GLOB.syndicate_employers, GLOB.nanotrasen_employers)
+	possible_employers.Add(GLOB.syndicate_employers, GLOB.donk_employers)
 
 	switch(faction)
 		if(FACTION_SYNDICATE)
-			possible_employers -= GLOB.nanotrasen_employers
+			possible_employers -= GLOB.donk_employers
 		if(FACTION_NANOTRASEN)
 			possible_employers -= GLOB.syndicate_employers
 	employer = pick(possible_employers)
