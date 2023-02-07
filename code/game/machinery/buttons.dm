@@ -39,15 +39,20 @@
 
 	src.check_access(null)
 
-	if(req_access.len || req_one_access.len)
+	if(length(req_access) || length(req_one_access))
 		board = new(src)
-		if(req_access.len)
+		if(length(req_access))
 			board.accesses = req_access
 		else
 			board.one_access = 1
 			board.accesses = req_one_access
 
 	setup_device()
+
+/obj/machinery/button/Destroy()
+	QDEL_NULL(device)
+	QDEL_NULL(board)
+	return ..()
 
 /obj/machinery/button/update_icon_state()
 	if(panel_open)
@@ -96,6 +101,7 @@
 				req_one_access = board.accesses
 			else
 				req_access = board.accesses
+			balloon_alert(user, "electronics added")
 			to_chat(user, span_notice("You add [W] to the button."))
 
 		if(!device && !board && W.tool_behaviour == TOOL_WRENCH)
@@ -137,6 +143,17 @@
 /obj/machinery/button/attack_robot(mob/user)
 	return attack_ai(user)
 
+/obj/machinery/button/examine(mob/user)
+	. = ..()
+	if(!panel_open)
+		return
+	if(device)
+		. += span_notice("There is \a [device] inside, which could be removed with an <b>empty hand</b>.")
+	if(board)
+		. += span_notice("There is \a [board] inside, which could be removed with an <b>empty hand</b>.")
+	if(!board && !device)
+		. += span_notice("There is nothing currently installed in \the [src].")
+
 /obj/machinery/button/proc/setup_device()
 	if(id && istype(device, /obj/item/assembly/control))
 		var/obj/item/assembly/control/A = device
@@ -158,14 +175,15 @@
 	if(panel_open)
 		if(device || board)
 			if(device)
-				device.forceMove(drop_location())
+				user.put_in_hands(device)
 				device = null
 			if(board)
-				board.forceMove(drop_location())
+				user.put_in_hands(board)
 				req_access = list()
 				req_one_access = list()
 				board = null
 			update_appearance()
+			balloon_alert(user, "electronics removed")
 			to_chat(user, span_notice("You remove electronics from the button frame."))
 
 		else
@@ -173,6 +191,7 @@
 				skin = "launcher"
 			else
 				skin = "doorctrl"
+			balloon_alert(user, "swapped button style")
 			to_chat(user, span_notice("You change the button frame's front panel."))
 		return
 
@@ -207,15 +226,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/button/door, 24)
 
 /obj/machinery/button/door/indestructible
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-
-/datum/armor/machinery_button
-	melee = 50
-	bullet = 50
-	laser = 50
-	energy = 50
-	bomb = 10
-	fire = 90
-	acid = 70
 
 /obj/machinery/button/door/setup_device()
 	if(!device)
@@ -315,15 +325,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/button/door, 24)
 	device_type = /obj/item/assembly/control/curtain
 	var/sync_doors = TRUE
 
-/datum/armor/machinery_button
-	melee = 50
-	bullet = 50
-	laser = 50
-	energy = 50
-	bomb = 10
-	fire = 90
-	acid = 70
-
 /obj/machinery/button/curtain/setup_device()
 	var/obj/item/assembly/control/curtain = device
 	curtain.sync_doors = sync_doors
@@ -359,15 +360,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/button/door, 24)
 	id = 1
 	/// The specific lift id of the tram we're calling.
 	var/lift_id = MAIN_STATION_TRAM
-
-/datum/armor/machinery_button
-	melee = 50
-	bullet = 50
-	laser = 50
-	energy = 50
-	bomb = 10
-	fire = 90
-	acid = 70
 
 /obj/machinery/button/tram/setup_device()
 	var/obj/item/assembly/control/tram/tram_device = device
